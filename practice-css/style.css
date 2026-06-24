@@ -4,3 +4,27 @@ h1{
 h2{
     background-color:gray;
 }
+h1{
+    text-shadow:0 0 10px gray;
+}
+
+h2{
+    background-color:gray;
+    color:white;
+    padding:10px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+.lesson{
+  background-color:#eef6ff;
+
+  padding:15px;
+
+  border-radius:10px;
+
+  min-height:250px;
+}
