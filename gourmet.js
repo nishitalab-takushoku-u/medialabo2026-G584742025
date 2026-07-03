@@ -19,6 +19,28 @@ function print(data) {
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+  let x = document.createElement('div');
+  x.setAttribute('id','result');
+  let y = document.querySelector('body');
+  y.insertAdjacentElement('beforeend',x);
+  let z = document.querySelector('tbody#s');
+  
+
+  let i = 0;
+  for(let x of data.results.shop){
+    let h =[x.name,x.access,x.address,x.budget.name,x.catch,x.genre.name,x.open,x.station_name,x.sub_genre.name];
+
+    let tr = document.createElement('tr');
+    console.log(z);
+    z.insertAdjacentElement('beforeend',tr);
+    let td = [];
+    for(let k =0; k<h.length; k++){
+      td[k].textContent = h[k];
+      
+
+    }
+  }
+
 
 }
 
