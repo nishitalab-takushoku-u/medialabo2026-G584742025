@@ -25,24 +25,38 @@ function printDom(data) {
   y.insertAdjacentElement('beforeend',x);
   let z = document.querySelector('tbody#s');
   
+  
 
+  
   let i = 0;
   for(let x of data.results.shop){
     let h =[x.name,x.access,x.address,x.budget.name,x.catch,x.genre.name,x.open,x.station_name,x.sub_genre.name];
+    
+
 
     let tr = document.createElement('tr');
-    console.log(z);
+    
+    //console.log(z);
+    
     z.insertAdjacentElement('beforeend',tr);
-    let td = [];
-    for(let k =0; k<h.length; k++){
-      td[k].textContent = h[k];
+    
+
+    
+    //let td = [];
+    
+    for(let k = 0; k < h.length; k++){
+      let td = document.createElement('td');
+      td.textContent = h[k];
+      tr.insertAdjacentElement('beforeend', td);
       
-
     }
+
   }
-
-
+  
 }
+
+
+
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
 
