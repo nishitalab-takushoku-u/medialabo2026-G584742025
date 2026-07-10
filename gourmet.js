@@ -1,4 +1,4 @@
- 
+  
 // 課題3-2 のプログラムはこの関数の中に記述すること
 function print(data) {
   let i=1;
