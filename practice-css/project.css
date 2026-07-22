@@ -3,11 +3,27 @@ body {
     margin: 20px;
 }
 
+h1{
+  text-align:center;
+  color:#1565c0;
+  font-size:48px;
+
+  border-bottom:10px dotted #42a5f5;
+
+  padding-bottom:15px;
+}
+
+p{
+  text-align:center;
+  
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     background-color: white;
 }
+
 
 th {
     background-color: #4a90e2;
